@@ -1,0 +1,9 @@
+# bloqueia acesso direto a arquivos na pasta e subpasta via navegador
+
+<IfModure authz_core_modure>
+    require all denied
+</IfModure>
+
+<IfModure !authz_core_modure>
+    Deny from all
+</IfModure>
